@@ -3,9 +3,11 @@ package mypackage.model;
 
 public class FoodItem {
 
-    private final int id;
-    private final String name;
-    private final double price;
+    private  int id;
+    private  String name;
+    private  double price;
+    public FoodItem() {
+    }
 
     public FoodItem(int id, String name, double price) {
         if (id <= 0) {

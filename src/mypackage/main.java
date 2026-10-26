@@ -12,6 +12,7 @@ import mypackage.repository.FoodItemRepository;
 import mypackage.repository.CollectionFoodItemRepository;
 import mypackage.service.FoodOrderService;
 import mypackage.controller.FoodOrderController;
+import mypackage.repository.FileFoodItemRepository;
 public class main {
 
     public static void main(String[] args) {
@@ -56,7 +57,7 @@ public class main {
         System.out.println("Name: " + user.getName());
         System.out.println("Phone: " + user.getPhoneNumber());
 
-        FoodItemRepository repository = new CollectionFoodItemRepository();
+        FoodItemRepository repository = new FileFoodItemRepository();
 
         FoodOrderService service = new FoodOrderService(repository);
 
